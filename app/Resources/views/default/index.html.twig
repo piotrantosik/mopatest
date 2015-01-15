@@ -1,0 +1,15 @@
+{% extends 'MopaBootstrapBundle::base_less.html.twig' %}
+
+{% block content_content %}
+    Homepage.
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+
+        <button type="submit">submit</button>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block head_script %}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% endblock head_script %}
